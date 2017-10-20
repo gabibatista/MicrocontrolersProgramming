@@ -1,0 +1,421 @@
+
+aula3.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000240  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .debug_aranges 00000020  00000000  00000000  00000294  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  2 .debug_pubnames 0000003e  00000000  00000000  000002b4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  3 .debug_info   000001c7  00000000  00000000  000002f2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_abbrev 00000123  00000000  00000000  000004b9  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_line   000002a5  00000000  00000000  000005dc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_frame  00000050  00000000  00000000  00000884  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_str    000000e3  00000000  00000000  000008d4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_loc    00000060  00000000  00000000  000009b7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_ranges 00000048  00000000  00000000  00000a17  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 56 00 	jmp	0xac	; 0xac <__ctors_end>
+   4:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+   8:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+   c:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  10:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  14:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  18:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  1c:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  20:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  24:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  28:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  2c:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  30:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  34:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  38:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  3c:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  40:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  44:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  48:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  4c:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  50:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  54:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  58:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  5c:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  60:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  64:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  68:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  6c:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  70:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  74:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  78:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  7c:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  80:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  84:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  88:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  8c:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  90:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  94:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  98:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  9c:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  a0:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  a4:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  a8:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+
+000000ac <__ctors_end>:
+  ac:	11 24       	eor	r1, r1
+  ae:	1f be       	out	0x3f, r1	; 63
+  b0:	cf ef       	ldi	r28, 0xFF	; 255
+  b2:	da e0       	ldi	r29, 0x0A	; 10
+  b4:	de bf       	out	0x3e, r29	; 62
+  b6:	cd bf       	out	0x3d, r28	; 61
+  b8:	0e 94 ec 00 	call	0x1d8	; 0x1d8 <main>
+  bc:	0c 94 1e 01 	jmp	0x23c	; 0x23c <_exit>
+
+000000c0 <__bad_interrupt>:
+  c0:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000000c4 <IO_init>:
+// inclui arquivos e definições da placa
+#include "lab_uino.h"
+
+//define funções e rotinas
+void IO_init(void){
+	DDRB = (1<<7)|(1<<6)|(1<<5)|(1<<4)|(1<<3)|(1<<2)|(1<<1);
+  c4:	8e ef       	ldi	r24, 0xFE	; 254
+  c6:	84 b9       	out	0x04, r24	; 4
+	DDRC = (1<<6)|(1<<7);
+  c8:	90 ec       	ldi	r25, 0xC0	; 192
+  ca:	97 b9       	out	0x07, r25	; 7
+	DDRD = (1<<4)|(1<<6)|(1<<7);
+  cc:	80 ed       	ldi	r24, 0xD0	; 208
+  ce:	8a b9       	out	0x0a, r24	; 10
+	DDRE = 0;
+  d0:	1d b8       	out	0x0d, r1	; 13
+	DDRF = 0;
+  d2:	10 ba       	out	0x10, r1	; 16
+	PORTB = 0;
+  d4:	15 b8       	out	0x05, r1	; 5
+	PORTC = 0;
+  d6:	18 b8       	out	0x08, r1	; 8
+	PORTD = (1<<5)|(1<<1)|(1<<0);
+  d8:	83 e2       	ldi	r24, 0x23	; 35
+  da:	8b b9       	out	0x0b, r24	; 11
+	PORTE = (1<<2);
+  dc:	84 e0       	ldi	r24, 0x04	; 4
+  de:	8e b9       	out	0x0e, r24	; 14
+	PORTF = (1<<7)|(1<<6);
+  e0:	91 bb       	out	0x11, r25	; 17
+	MCUCR |= (1<<JTD);
+  e2:	85 b7       	in	r24, 0x35	; 53
+  e4:	80 68       	ori	r24, 0x80	; 128
+  e6:	85 bf       	out	0x35, r24	; 53
+	MCUCR |= (1<<JTD); //desliga interface JTAG.
+  e8:	85 b7       	in	r24, 0x35	; 53
+  ea:	80 68       	ori	r24, 0x80	; 128
+  ec:	85 bf       	out	0x35, r24	; 53
+}
+  ee:	08 95       	ret
+
+000000f0 <led_on>:
+
+void led_on(unsigned char led){
+
+	switch(led){
+  f0:	86 30       	cpi	r24, 0x06	; 6
+  f2:	51 f1       	breq	.+84     	; 0x148 <led_on+0x58>
+  f4:	87 30       	cpi	r24, 0x07	; 7
+  f6:	70 f4       	brcc	.+28     	; 0x114 <led_on+0x24>
+  f8:	83 30       	cpi	r24, 0x03	; 3
+  fa:	01 f1       	breq	.+64     	; 0x13c <led_on+0x4c>
+  fc:	84 30       	cpi	r24, 0x04	; 4
+  fe:	28 f4       	brcc	.+10     	; 0x10a <led_on+0x1a>
+ 100:	81 30       	cpi	r24, 0x01	; 1
+ 102:	c1 f0       	breq	.+48     	; 0x134 <led_on+0x44>
+ 104:	82 30       	cpi	r24, 0x02	; 2
+ 106:	69 f5       	brne	.+90     	; 0x162 <led_on+0x72>
+ 108:	17 c0       	rjmp	.+46     	; 0x138 <led_on+0x48>
+ 10a:	84 30       	cpi	r24, 0x04	; 4
+ 10c:	c9 f0       	breq	.+50     	; 0x140 <led_on+0x50>
+ 10e:	85 30       	cpi	r24, 0x05	; 5
+ 110:	41 f5       	brne	.+80     	; 0x162 <led_on+0x72>
+ 112:	18 c0       	rjmp	.+48     	; 0x144 <led_on+0x54>
+ 114:	89 30       	cpi	r24, 0x09	; 9
+ 116:	f1 f0       	breq	.+60     	; 0x154 <led_on+0x64>
+ 118:	8a 30       	cpi	r24, 0x0A	; 10
+ 11a:	28 f4       	brcc	.+10     	; 0x126 <led_on+0x36>
+ 11c:	87 30       	cpi	r24, 0x07	; 7
+ 11e:	b1 f0       	breq	.+44     	; 0x14c <led_on+0x5c>
+ 120:	88 30       	cpi	r24, 0x08	; 8
+ 122:	f9 f4       	brne	.+62     	; 0x162 <led_on+0x72>
+ 124:	15 c0       	rjmp	.+42     	; 0x150 <led_on+0x60>
+ 126:	8b 30       	cpi	r24, 0x0B	; 11
+ 128:	c9 f0       	breq	.+50     	; 0x15c <led_on+0x6c>
+ 12a:	8b 30       	cpi	r24, 0x0B	; 11
+ 12c:	a8 f0       	brcs	.+42     	; 0x158 <led_on+0x68>
+ 12e:	8c 30       	cpi	r24, 0x0C	; 12
+ 130:	c1 f4       	brne	.+48     	; 0x162 <led_on+0x72>
+ 132:	16 c0       	rjmp	.+44     	; 0x160 <led_on+0x70>
+		case 1: Liga_Strobe();
+ 134:	2f 9a       	sbi	0x05, 7	; 5
+ 136:	08 95       	ret
+		break;
+		case 2: Liga_Feed();
+ 138:	2b 9a       	sbi	0x05, 3	; 5
+ 13a:	08 95       	ret
+		break;
+		case 3: Liga_Sel_in();
+ 13c:	29 9a       	sbi	0x05, 1	; 5
+ 13e:	08 95       	ret
+		break;
+		case 4: Liga_Init();
+ 140:	2a 9a       	sbi	0x05, 2	; 5
+ 142:	08 95       	ret
+		break;
+		case 5: Liga_D0();
+ 144:	5c 9a       	sbi	0x0b, 4	; 11
+ 146:	08 95       	ret
+		break;
+		case 6: Liga_D1();
+ 148:	5e 9a       	sbi	0x0b, 6	; 11
+ 14a:	08 95       	ret
+		break;
+		case 7: Liga_D2();
+ 14c:	5f 9a       	sbi	0x0b, 7	; 11
+ 14e:	08 95       	ret
+		break;
+		case 8: Liga_D3();
+ 150:	2c 9a       	sbi	0x05, 4	; 5
+ 152:	08 95       	ret
+		break;
+		case 9: Liga_D4();
+ 154:	2d 9a       	sbi	0x05, 5	; 5
+ 156:	08 95       	ret
+		break;
+		case 10: Liga_D5();
+ 158:	2e 9a       	sbi	0x05, 6	; 5
+ 15a:	08 95       	ret
+		break;
+		case 11: Liga_D6();
+ 15c:	46 9a       	sbi	0x08, 6	; 8
+ 15e:	08 95       	ret
+		break;
+		case 12: Liga_D7();
+ 160:	47 9a       	sbi	0x08, 7	; 8
+ 162:	08 95       	ret
+
+00000164 <led_off>:
+	}
+}
+
+void led_off(unsigned char led){
+
+	switch(led){
+ 164:	86 30       	cpi	r24, 0x06	; 6
+ 166:	51 f1       	breq	.+84     	; 0x1bc <led_off+0x58>
+ 168:	87 30       	cpi	r24, 0x07	; 7
+ 16a:	70 f4       	brcc	.+28     	; 0x188 <led_off+0x24>
+ 16c:	83 30       	cpi	r24, 0x03	; 3
+ 16e:	01 f1       	breq	.+64     	; 0x1b0 <led_off+0x4c>
+ 170:	84 30       	cpi	r24, 0x04	; 4
+ 172:	28 f4       	brcc	.+10     	; 0x17e <led_off+0x1a>
+ 174:	81 30       	cpi	r24, 0x01	; 1
+ 176:	c1 f0       	breq	.+48     	; 0x1a8 <led_off+0x44>
+ 178:	82 30       	cpi	r24, 0x02	; 2
+ 17a:	69 f5       	brne	.+90     	; 0x1d6 <led_off+0x72>
+ 17c:	17 c0       	rjmp	.+46     	; 0x1ac <led_off+0x48>
+ 17e:	84 30       	cpi	r24, 0x04	; 4
+ 180:	c9 f0       	breq	.+50     	; 0x1b4 <led_off+0x50>
+ 182:	85 30       	cpi	r24, 0x05	; 5
+ 184:	41 f5       	brne	.+80     	; 0x1d6 <led_off+0x72>
+ 186:	18 c0       	rjmp	.+48     	; 0x1b8 <led_off+0x54>
+ 188:	89 30       	cpi	r24, 0x09	; 9
+ 18a:	f1 f0       	breq	.+60     	; 0x1c8 <led_off+0x64>
+ 18c:	8a 30       	cpi	r24, 0x0A	; 10
+ 18e:	28 f4       	brcc	.+10     	; 0x19a <led_off+0x36>
+ 190:	87 30       	cpi	r24, 0x07	; 7
+ 192:	b1 f0       	breq	.+44     	; 0x1c0 <led_off+0x5c>
+ 194:	88 30       	cpi	r24, 0x08	; 8
+ 196:	f9 f4       	brne	.+62     	; 0x1d6 <led_off+0x72>
+ 198:	15 c0       	rjmp	.+42     	; 0x1c4 <led_off+0x60>
+ 19a:	8b 30       	cpi	r24, 0x0B	; 11
+ 19c:	c9 f0       	breq	.+50     	; 0x1d0 <led_off+0x6c>
+ 19e:	8b 30       	cpi	r24, 0x0B	; 11
+ 1a0:	a8 f0       	brcs	.+42     	; 0x1cc <led_off+0x68>
+ 1a2:	8c 30       	cpi	r24, 0x0C	; 12
+ 1a4:	c1 f4       	brne	.+48     	; 0x1d6 <led_off+0x72>
+ 1a6:	16 c0       	rjmp	.+44     	; 0x1d4 <led_off+0x70>
+		case 1: Desliga_Strobe();
+ 1a8:	2f 98       	cbi	0x05, 7	; 5
+ 1aa:	08 95       	ret
+		break;
+		case 2: Desliga_Feed();
+ 1ac:	2b 98       	cbi	0x05, 3	; 5
+ 1ae:	08 95       	ret
+		break;
+		case 3: Desliga_Sel_in();
+ 1b0:	29 98       	cbi	0x05, 1	; 5
+ 1b2:	08 95       	ret
+		break;
+		case 4: Desliga_Init();
+ 1b4:	2a 98       	cbi	0x05, 2	; 5
+ 1b6:	08 95       	ret
+		break;
+		case 5: Desliga_D0();
+ 1b8:	5c 98       	cbi	0x0b, 4	; 11
+ 1ba:	08 95       	ret
+		break;
+		case 6: Desliga_D1();
+ 1bc:	5e 98       	cbi	0x0b, 6	; 11
+ 1be:	08 95       	ret
+		break;
+		case 7: Desliga_D2();
+ 1c0:	5f 98       	cbi	0x0b, 7	; 11
+ 1c2:	08 95       	ret
+		break;
+		case 8: Desliga_D3();
+ 1c4:	2c 98       	cbi	0x05, 4	; 5
+ 1c6:	08 95       	ret
+		break;
+		case 9: Desliga_D4();
+ 1c8:	2d 98       	cbi	0x05, 5	; 5
+ 1ca:	08 95       	ret
+		break;
+		case 10: Desliga_D5();
+ 1cc:	2e 98       	cbi	0x05, 6	; 5
+ 1ce:	08 95       	ret
+		break;
+		case 11: Desliga_D6();
+ 1d0:	46 98       	cbi	0x08, 6	; 8
+ 1d2:	08 95       	ret
+		break;
+		case 12: Desliga_D7();
+ 1d4:	47 98       	cbi	0x08, 7	; 8
+ 1d6:	08 95       	ret
+
+000001d8 <main>:
+	}
+}
+
+// programa principal
+int main(void)
+{
+ 1d8:	ef 92       	push	r14
+ 1da:	ff 92       	push	r15
+ 1dc:	1f 93       	push	r17
+ 1de:	cf 93       	push	r28
+ 1e0:	df 93       	push	r29
+int x;
+
+	IO_init(); // inicia pinos de IO da placa. 
+ 1e2:	0e 94 62 00 	call	0xc4	; 0xc4 <IO_init>
+ 1e6:	c1 e0       	ldi	r28, 0x01	; 1
+ 1e8:	d0 e0       	ldi	r29, 0x00	; 0
+    milliseconds can be achieved.
+ */
+void
+_delay_loop_2(uint16_t __count)
+{
+	__asm__ volatile (
+ 1ea:	88 ec       	ldi	r24, 0xC8	; 200
+ 1ec:	e8 2e       	mov	r14, r24
+ 1ee:	f1 2c       	mov	r15, r1
+ 1f0:	0f c0       	rjmp	.+30     	; 0x210 <main+0x38>
+
+	
+	while(1){
+
+		for(x=1;x<13;x++){
+			led_on(x);
+ 1f2:	1c 2f       	mov	r17, r28
+ 1f4:	8c 2f       	mov	r24, r28
+ 1f6:	0e 94 78 00 	call	0xf0	; 0xf0 <led_on>
+ 1fa:	84 ef       	ldi	r24, 0xF4	; 244
+ 1fc:	91 e0       	ldi	r25, 0x01	; 1
+ 1fe:	f7 01       	movw	r30, r14
+ 200:	31 97       	sbiw	r30, 0x01	; 1
+ 202:	f1 f7       	brne	.-4      	; 0x200 <main+0x28>
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 204:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 206:	d9 f7       	brne	.-10     	; 0x1fe <main+0x26>
+			_delay_ms(50);
+			led_off(x);
+ 208:	81 2f       	mov	r24, r17
+ 20a:	0e 94 b2 00 	call	0x164	; 0x164 <led_off>
+	IO_init(); // inicia pinos de IO da placa. 
+
+	
+	while(1){
+
+		for(x=1;x<13;x++){
+ 20e:	21 96       	adiw	r28, 0x01	; 1
+ 210:	cd 30       	cpi	r28, 0x0D	; 13
+ 212:	d1 05       	cpc	r29, r1
+ 214:	74 f3       	brlt	.-36     	; 0x1f2 <main+0x1a>
+ 216:	1c e0       	ldi	r17, 0x0C	; 12
+			_delay_ms(50);
+			led_off(x);
+		}
+
+		for(x=12;x>0;x--){
+			led_on(x);
+ 218:	81 2f       	mov	r24, r17
+ 21a:	0e 94 78 00 	call	0xf0	; 0xf0 <led_on>
+ 21e:	84 ef       	ldi	r24, 0xF4	; 244
+ 220:	91 e0       	ldi	r25, 0x01	; 1
+ 222:	f7 01       	movw	r30, r14
+ 224:	31 97       	sbiw	r30, 0x01	; 1
+ 226:	f1 f7       	brne	.-4      	; 0x224 <main+0x4c>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 228:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 22a:	d9 f7       	brne	.-10     	; 0x222 <main+0x4a>
+			_delay_ms(50);
+			led_off(x);
+ 22c:	81 2f       	mov	r24, r17
+ 22e:	0e 94 b2 00 	call	0x164	; 0x164 <led_off>
+ 232:	11 50       	subi	r17, 0x01	; 1
+			led_on(x);
+			_delay_ms(50);
+			led_off(x);
+		}
+
+		for(x=12;x>0;x--){
+ 234:	89 f7       	brne	.-30     	; 0x218 <main+0x40>
+ 236:	c1 e0       	ldi	r28, 0x01	; 1
+ 238:	d0 e0       	ldi	r29, 0x00	; 0
+ 23a:	ea cf       	rjmp	.-44     	; 0x210 <main+0x38>
+
+0000023c <_exit>:
+ 23c:	f8 94       	cli
+
+0000023e <__stop_program>:
+ 23e:	ff cf       	rjmp	.-2      	; 0x23e <__stop_program>
